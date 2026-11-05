@@ -18,6 +18,12 @@ streamlit run app.py
 ```
 You can also paste the Groq key into the UI instead of using `.env`.
 
+## Deploy for free (Streamlit Community Cloud)
+1. Sign in at <https://share.streamlit.io> with GitHub (free, no card).
+2. **New app** → repository `akurapati1/ConversationalChatBot`, branch `main`, main file `app.py`.
+3. *Advanced settings*: Add secrets, e.g. `GROQ_API_KEY = "your-key"`.
+4. Deploy. The first start downloads the embedding model, so it takes a few minutes; the free tier has limited memory, so use small PDFs.
+
 ## Configuration
 | Variable | Default | Purpose |
 |---|---|---|
